@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+void NewLine() {
+	cout << "\n";
+}
+
+void NewLines(int count) {
+	for (size_t i = 0; i < count; i++)
+	{
+		cout << "\n";
+	}
+}
+
+void WriteBiggerNumber(int x, int y) {
+	cout << (x > y) ? x : y;
+}
+
+int Multiply(int x, int y) {
+	return x * y;
+}
+
+int main()
+{
+	NewLine();
+	NewLines(3);
+
+	int x, y;
+	cout << "Wpisz dwie liczby a dostaniesz wieksza";
+	cin >> x >> y;
+	WriteBiggerNumber(x, y);
+
+	cout << "Podaj dwie liczby a dostaniesz ich iloczyn:";
+	cin >> x >> y;
+	cout << Multiply(x, y) << "\n";
+
+	return 0;
+}
